@@ -1,6 +1,9 @@
 package calculator
 
-import "errors"
+import (
+	"errors"
+	"math"
+)
 
 func Add(a, b float64) float64 {
 	return (a + b)
@@ -20,4 +23,13 @@ func Divide(a, b float64) (float64, error) {
 	}
 
 	return (a / b), nil
+}
+
+func Sqrt(a float64) (float64, error) {
+
+	if a < 0 {
+		return 0, errors.New("not a valid input, +ve integers allowed")
+	}
+	number := math.Sqrt(a)
+	return number, nil
 }
