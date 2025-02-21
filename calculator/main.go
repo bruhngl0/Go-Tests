@@ -11,7 +11,4 @@ func main(){
 	}else{
 		fmt.Printf("answer to your question is %f", result)
 	}
-		
-	
-
 }
