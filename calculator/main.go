@@ -1,14 +1,15 @@
 package main
-import (
-	"fmt"
-	"calculator/calculator"
 
+import (
+	"calculator/calculator"
+	"fmt"
 )
-func main(){
-	result, err := calculator.Divide(2,0)
-	if err != nil{
+
+func main() {
+	result, err := calculator.Divide(10, 5)
+	if err != nil {
 		fmt.Printf("Error: %s", err)
-	}else{
+	} else {
 		fmt.Printf("answer to your question is %f", result)
 	}
 }
