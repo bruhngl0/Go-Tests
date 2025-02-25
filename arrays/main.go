@@ -5,8 +5,10 @@ import (
 )
 
 func main() {
+	fmt.Println("life is good" + "luck aint shit")
+	fmt.Println("1+1=", 1+1)
 
-	var a int
-	a = 5
-	fmt.Printf("%d", a)
+	fmt.Println(true && false)
+	fmt.Println(true || false)
+
 }
