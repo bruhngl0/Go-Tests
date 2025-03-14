@@ -52,9 +52,17 @@ func main() {
 
 	const g = "life is good"
 	fmt.Println(g)
+ 
+
+
+	
+
 
 	arr := []int{0, 1, 0, 3, 12}
 	shiftZeros(arr)
 	fmt.Println(arr)
+
+
+
 
 }
